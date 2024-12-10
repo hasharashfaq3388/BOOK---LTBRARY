@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Book Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Personal Book Library</h1>
+  </header>
+  <main>
+    <!-- Search Section -->
+    <section id="search-section">
+      <input type="text" id="search-bar" placeholder="Search for books...">
+    </section>
+
+    <!-- Add Book Section -->
+    <section id="add-book-section">
+      <h2>Add a New Book</h2>
+      <form id="add-book-form">
+        <input type="text" id="book-title" placeholder="Book Title" required>
+        <input type="text" id="book-author" placeholder="Author" required>
+        <input type="text" id="book-genre" placeholder="Genre" required>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <!-- Book List Section -->
+    <section id="book-list-section">
+      <h2>Book List</h2>
+      <table id="book-list">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Book rows will be added dynamically -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
